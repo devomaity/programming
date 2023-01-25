@@ -1,0 +1,15 @@
+/*
+call by value - 
+(1) when we call a function by value, it means that we are passing the values of 
+the arguments which are copied into the formal parameter of the function.
+
+(2) which means that the original values remain unchanged and only the parameters inside the function changes.
+
+void add(int a, int b) // here a and b are local variables.
+int main()
+{
+    x=2,y=3;
+    add(x,y) // here x and y are arguments. 
+}
+here assigned value of local variable(int a, int b) are those copied values of the arguments(x,y) which are declared in add(x,y) or user defined function when it is called.
+*/

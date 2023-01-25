@@ -1,0 +1,28 @@
+Structure is a collection of one or more variables of different datatypes that are grouped together under a single name.
+
+
+1) Structures are user defined datatypes in c.
+2) Using Structures allows us to combine data of different types together 
+3) It is used to create data types which contains diverse infotmation
+4) That are very similar to arrays but structure cna store data of any type, which is practically more useful
+5) Structures members are accessed Using dot(.)operator
+6) (.) is called as "structure member operator"
+Example - e1.id
+         e1 - is structure name 
+         id - member of structure
+
+
+Syntax
+======
+struct [structure_name]
+{
+    data_type var 1
+    data_type var 2
+    data_type var 3
+}
+[structure_variables];
+
+when we create a structure we are creating a whole different datatype and obviously we need a variable to access a datatype. 
+
+Note - variables or members inside a structure cannot be initilized.
+ structure variable - sizeof each structure variable is equal to the size of each member inside the structure 

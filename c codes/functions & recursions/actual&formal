@@ -1,0 +1,19 @@
+/* 
+Local variables - variables which are declared or initialized inside
+the functions and its scope is limited within the function.Default value of local variable
+is garbage value.
+
+Global variables - variables which are declared or initialized outside
+the functions and can be used anywere in the program are called global variables.
+Default value of global variable is 0.
+
+
+Actual parameters - parameters or expression which are called inside
+the main function are called actual parameters.
+
+
+Formal parameters - formal parameters are local variables which are assinged values 
+from the arguments when the function is called.
+
+arguments - variables which are passed from the main function to a formal parameter is known as arguments.
+*/

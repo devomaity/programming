@@ -1,0 +1,6 @@
+break statement
+
+If break statement is used inside a nestesd loop then only that loop exits in which the
+break the statement is used 
+-->not the whole loop exits
+Break statement can only be used inside switch case and loop

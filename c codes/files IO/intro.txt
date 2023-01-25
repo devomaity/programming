@@ -1,0 +1,45 @@
+include<stdio.h>
+1 - fprintf()
+2 - fscanf()
+3 - fopen()
+4 - fclose()      
+
+Opening a file - creating or editing a file 
+
+1) stdio.h contains a function called fopen()for opening files in c. 
+2)The syntax for opening a file in standard I/O is:
+       
+        ptr = ("fileopen","mode")
+3)  For example:
+    
+    fopen("E:\\devopriyo\\maity.txt","w");
+    fopen("E:\\programming"\\bhai.bin","rb");
+
+ Closing a file
+
+1) Any file which is opened in a c program needs to be closed  
+2) Closing  a file is accomplished by the library function fclose()
+3) fclose(fptr); //fptr is the file pointer associated with file to be closed   
+
+Reading a file  
+
+1) In order to read a file, we can use fscanf funtion.
+   
+   syntax - fscanf(pointer name,"%s",string name);
+
+2) This function is file version of scanf function
+3) fscanf expects a file pointer in addition to the other arguments which scanf expects 
+4) We will have to open the file in read mode in order to use this function 
+
+Writing to a file 
+
+1) In order to write a file, we can use fprintf funtion.
+   
+   syntax - fprintf(pointer name,"%s",string name);
+
+2) This function is file version of printf function
+3) fprintf expects a file pointer in addition to the other arguments which printf expects 
+4) We will have to open the file in write mode in order to use this function 
+ 
+ video - 10:39
+

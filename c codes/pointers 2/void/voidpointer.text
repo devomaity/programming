@@ -1,0 +1,102 @@
+int(%d) = 4 bytes
+char(%c) = 1 byte
+float(%f) = 4 bytes
+double(%lf) = 8 bytes
+long(%Lf) = 10 bytes
+
+int a = 30;
+int *ptr;
+ptr = &a;
+printf("%d",*ptr) - here when we use *(astrisk) it printf the value stored in the pointer.
+                    similarly without using astrisk it prints the address.
+
+
+void is a datatype whose default  value is 0 and can be typecasted in any other datatype
+void pointer = void*point 
+
+=======================================================================================
+
+pointer arithmetic:
+1) In pointer arithmetic adding of two pointers  is invalid.
+   example - *p
+              p = p+q this type of operation is invalid. 
+2) In pointer arithmetic adding a pointer with an integer is valid. 
+   example - *p 
+              p = p+2 this type of operation is valid.
+
+3) Increment: It is a condition that also comes under addition. When a pointer is incremented, it actually increments by the number equal to the size of the data type for which it is a pointer. 
+
+For Example: 
+If an integer pointer that stores address 1000 is incremented, then it will increment by 2(size of an int) and the new address it will points to 1002. While if a float type pointer is incremented then it will increment by 4(size of a float) and the new address will be 1004.
+Decrement: It is a condition that also comes under subtraction. When a pointer is decremented, it actually decrements by the number equal to the size of the data type for which it is a pointer. 
+
+Decrement: 
+For Example: If an integer pointer that stores address 1000 is decremented, then it will decrement by 2(size of an int) and the new address it will points to 998. While if a float type pointer is decremented then it will decrement by 4(size of a float) and the new address will be 996.
+
+
+p+1 = here p is a pointer which stores the address of any other variables and when we
+      add +1 or any value it pointes to the next address.
+      Formula = p + value * size_of_datatype. 
+
+      For example - if the base address of the pointer is 1000 and if we add 1 it pointes to the next address which is 1004.
+      or , 1000+1*4=1004
+           1000+2*4=1008
+           1000+3*4=1012
+
+
+simple pointer arithmetic program
+
+#include<stdio.h>
+
+int main()
+{
+	int n[] = {4,-1,0,2,5,-3};
+    int *ptr;
+	     ptr = &n[1];   
+	
+	printf("\n after adding 1 the value will is %d",*ptr);
+	
+return 0;	
+}   
+     n =   4,  -1,  0,   2,   5,   -3
+         1000 1004 1008 1012 1016  1020 (int = 4 bytes)
+
+      ptr = &n[1];    &n[1] or n + 1 
+
+                      Note: when we add 1 it doesn't increment the value of n cause it is an array. actually it points to the next address of the pointer variable *ptr
+                      Formula = p + value * size_of_datatype.
+                      for example - given above 
+
+========================================================================
+pointers arithmetic(subtraction)
+
+1) Pointers can be substracted
+2) pointers subtraction - subtraction between two pointers shows the no. of elements present betweeen them
+Example - int a[4] = {2,-1,6,0};
+          int *p = &a[0];
+          int *q = &a[2];
+          int d = p - q;
+          q = q - 2;
+formula - 
+i) (pointer1 - pointer2)/size_of_datatype   // using this formula the resultant pointers to the number elements
+ii) pointer - integer // using this formula the resultant will be an address  
+ 
+video - 9:18
+
+
+
+
+                     
+
+
+
+
+
+
+
+
+
+
+      
+
+

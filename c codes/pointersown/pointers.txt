@@ -1,0 +1,21 @@
+Each and every bite in the memory storage has an address
+#include<stdio.h>
+int main()
+{
+    int a = 10;
+    int *p
+    p = &a;
+    printf("%d",p); -> this prints the address p points to.
+    printf("%d",*p); -> this prints the value stored in the address p.
+
+    *p = 12; -> this is called dereferncing, it means we can change the value at 
+    address p.
+    
+    // pointer arithmetic
+    suppose the address stored in p is 2002
+    printf("%d\n",p+1); --> Then in pointer arithmetic p+1 will be 2006
+    As we know that a pointer stores the address of other varibles, then in pointer 
+    arithmetic p+1 = it will increase the address by the sizeof the datatype of which 
+    the pointer is declared. 
+
+}
