@@ -2,9 +2,10 @@
 C program to find Length of the String by passing String/ Character Array 
 as an argument using User Define Functions.
 */ 
-#include<stdio.h>     
+#include<stdio.h>
+#include<conio.h>     
 /*function declaration*/
-int stringLength(char *);
+int stringLength(char *str);
 
 int main()
 {
@@ -19,7 +20,7 @@ int main()
      
     printf("Input text is: %s\n",text);
     printf("Length is: %d\n",length);
-     
+    getch(); 
     return 0;
 } 
 /* function definition...

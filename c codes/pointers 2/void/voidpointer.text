@@ -12,7 +12,8 @@ printf("%d",*ptr) - here when we use *(astrisk) it printf the value stored in th
 
 
 void is a datatype whose default  value is 0 and can be typecasted in any other datatype
-void pointer = void*point 
+void pointer = void*point
+Also we cannot derefrence a void pointer because it is not maped to particular datatype. 
 
 =======================================================================================
 

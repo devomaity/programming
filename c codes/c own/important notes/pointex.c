@@ -10,7 +10,8 @@ int main()
     int *ptr;
     ptr = &n[i];
 
-    printf("\n after adding 1 the value will is %x", ptr);
+    printf("\n after adding 1 the value will is %d", (*ptr)+1);
+
     getch();
     return 0;
 }

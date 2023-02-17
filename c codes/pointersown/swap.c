@@ -24,7 +24,7 @@ int main(){
     printf("After swaping the value of ptr1 = %d and ptr2 = %d\n",*ptr1,*ptr2);
     printf("\n");
 
-    // dererencing
+    // derefrencing
     *ptr1 = 15;
     *ptr2 = 20;
      printf("After derefrencing the value of ptr1 = %d and ptr2 = %d\n",*ptr1,*ptr2);

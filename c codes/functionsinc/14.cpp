@@ -2,10 +2,11 @@
 C program to find Sum of all Array Elements by passing array 
 as an argument using User Defined Functions.
 */ 
-#include<stdio.h>     
+#include<stdio.h>  
+#include<conio.h>   
 #define MAX_ELEMENTS 100 
 /*function declaration*/ 
-int sumOfElements(int [],int);
+int sumOfElements(int x[],int);
  
 int main()
 {
@@ -38,8 +39,10 @@ int main()
     sum=sumOfElements(arr,N);
      
     printf("\nSUM of all Elements: %d\n",sum);
-     
+
+    getch(); 
     return 0;
+    
 }
 /* function definition...
  * Function     :   sumOfElements

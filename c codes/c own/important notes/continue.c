@@ -6,7 +6,8 @@ continue statement
 3) It is mainly used for a condition so that we can skip some lines of code for a particular condition 
 */
 
-#include<stdio.h>  
+#include<stdio.h> 
+#include<conio.h> 
 int main(){  
 int i=1;//initializing a local variable       
 //starting a loop from 1 to 10    
@@ -16,6 +17,7 @@ if(i==5)//if value of i is equal to 5, it will continue the loop
 continue;    
 }    
 printf("%d \n",i);    
-}//end of for loop    
+}//end of for loop
+getch();    
 return 0;  
 }  

@@ -8,9 +8,8 @@ int main()
     printf("%d",p); -> this prints the address p points to.
     printf("%d",*p); -> this prints the value stored in the address p.
 
-    *p = 12; -> this is called dereferncing, it means we can change the value at 
-    address p.
-    
+    *p = 12; -> this is called dereferncing, it means we can change the value of any variable using the pointer variable.
+       
     // pointer arithmetic
     suppose the address stored in p is 2002
     printf("%d\n",p+1); --> Then in pointer arithmetic p+1 will be 2006
@@ -19,3 +18,26 @@ int main()
     the pointer is declared. 
 
 }
+pointer to pointer  - we already know that a pointer points to a location in 
+memory and is thus used to store the address of variables.So, when we define a pointer to a pointer. The first pointer is used to store the address of the variables. And the second pointer is used to store the address of the first pointer. That is why they are know as double-pointers. we can use a pointer to pointer to change the values of normal pointers or create a variables-sized 2-D array. A double pointer occupies the same amount of space in the memory stack as a normal pointer.
+
+
+
+what are the cautions for pointer arithmetic in c
+
+Pointer arithmetic can be a powerful and useful feature in C, but it can also be a source of bugs and errors if used incorrectly. Here are some cautions to keep in mind when working with pointer arithmetic:
+
+Avoid performing arithmetic on void pointers: Void pointers do not have a type, so you cannot perform arithmetic on them directly. You need to cast them to a specific pointer type before doing arithmetic. If you don't, the behavior is undefined.
+
+Don't dereference a pointer that has been incremented beyond the bounds of an array: If you increment a pointer beyond the last element of an array or decrement it before the first element of an array, you are accessing memory outside the bounds of the array, which can lead to undefined behavior.
+
+Don't mix pointer types: You should not mix pointers to different types, as this can lead to unexpected behavior. For example, adding an integer to a pointer to a char may not produce the expected result, as the size of a char may be different from the size of an integer.
+
+Be aware of the size of the data type: When performing pointer arithmetic, the size of the data type that the pointer is pointing to is important. For example, if the pointer is pointing to an int, adding 1 to the pointer will advance it by the size of an int. If you add 1 to a pointer to a char, it will advance by the size of a char.
+
+Don't perform arithmetic on a null pointer: Performing arithmetic on a null pointer is undefined behavior and can result in a program crash or other unexpected behavior.
+
+Be aware of pointer aliasing: Pointer aliasing occurs when two pointers of different types point to the same memory location. This can lead to unexpected behavior when performing pointer arithmetic on one or both of the pointers.
+
+Overall, pointer arithmetic can be a powerful tool, but it is important to use it with caution and pay attention to the details of the data types involved.
+  

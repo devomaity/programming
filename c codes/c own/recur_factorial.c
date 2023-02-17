@@ -1,3 +1,4 @@
+// n!=n * (n-1)
 #include<stdio.h>
 #include<conio.h>
 
